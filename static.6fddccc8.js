@@ -1184,7 +1184,7 @@ function _getRouteInfo() {
           case 18:
             // In production, fetch the JSON file
             // Find the location of the routeInfo.json file
-            routeInfoRoot = ( false ? undefined : "https://okbrown.github.io/blog/") || false;
+            routeInfoRoot = ( false ? undefined : "https://orlandobrown.uk/") || false;
             cacheBuster = process.env.REACT_STATIC_CACHE_BUST ? "?".concat(process.env.REACT_STATIC_CACHE_BUST) : '';
             getPath = "".concat(routeInfoRoot).concat((0, _utils.pathJoin)(path, 'routeInfo.json')).concat(cacheBuster); // If this is a priority call bypass the queue
 
@@ -1872,9 +1872,7 @@ function getRoutePath(routePath) {
   } // Be sure to remove the base path
 
 
-  if (true) {
-    routePath = routePath.replace(new RegExp("^\\/?".concat("blog", "\\/")), '');
-  }
+  if (false) {}
 
   routePath = routePath || '/';
   return pathJoin(routePath);
@@ -2100,7 +2098,7 @@ function isSSR() {
 }
 
 function getBasePath() {
-  return  false ? undefined : "blog";
+  return  false ? undefined : "";
 }
 
 function isPrefetchableRoute(path) {
@@ -6145,4 +6143,4 @@ if(false){}}
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.900c418e.js.map
+//# sourceMappingURL=static.6fddccc8.js.map
