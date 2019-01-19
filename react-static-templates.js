@@ -16,7 +16,7 @@ const t_0 = universal(import('../src/pages/404.js'), universalOptions)
 const t_1 = universal(import('../src/pages/about.js'), universalOptions)
 const t_2 = universal(import('../src/pages/index.js'), universalOptions)
 const t_3 = universal(import('../src/posts/why-another-web-developer-blog.js'), universalOptions)
-const t_4 = universal(import('../src/posts/challenging-our-comfort-zone.js'), universalOptions)
+const t_4 = universal(import('../src/posts/challenging-your-comfort-zone.js'), universalOptions)
 const t_5 = universal(import('../src/posts/to-fullstack-or-not-to-fullstack.js'), universalOptions)
 
 
