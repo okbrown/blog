@@ -20,8 +20,9 @@ const post = {
   },
   category: "Javascript",
   author: "Orlando Brown",
+  slug: 'challenging-your-comfort-zone',
   tags: [ "create react app", "react", "webpack" ],
-  component: "./src/posts/challenging-our-comfort-zone.js"
+  component: "./src/posts/challenging-your-comfort-zone.js"
 };
 
 const BlogPost = () => {

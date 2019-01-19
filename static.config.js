@@ -3,6 +3,7 @@ const posts = postList.sort((a,b) => a.id - b.id);
 
 export default {
   getSiteData: async () => ({
+    siteRoot:'https://orlandobrown.uk',
     siteTitle: 'Orlando Brown - The pixel pusher blog',
     header: {
       logoName: 'OB',
