@@ -1,0 +1,31 @@
+{
+  "name": "okb-pixel-pusher-blog",
+  "version": "0.0.1",
+  "homepage": "https://orlandobrown.uk",
+  "private": true,
+  "scripts": {
+    "start": "npm run build:posts && react-static start",
+    "stage": "npm run build:posts && react-static build --staging",
+    "build": "npm run build:posts && react-static build",
+    "build:posts": "rm ./src/posts/index.js && node static.build.posts.js",
+    "serve": "serve dist -p 3000 -s",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "reactStaticCustom": {
+    "postsLocation": "./src/posts"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.3.12",
+    "react-static": "^6.0.2"
+  },
+  "devDependencies": {
+    "eslint-config-react-tools": "1.x.x",
+    "serve": "10.1.1"
+  }
+}

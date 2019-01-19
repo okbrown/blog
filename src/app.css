@@ -1,0 +1,280 @@
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+dd, dl {
+	margin: 0;
+}
+
+dt {
+	width: 4rem;
+}
+
+dl, dt, dd {
+	font-size: .8rem;
+}
+
+img, figure {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+a, a:link {
+	color: rgba(3, 9, 31, 0.9);
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(194, 69, 31, 0.9);
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: rgba(3, 9, 31, 0.9);
+	margin: 0;
+}
+
+body {
+	max-width: 65rem;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: rgba(3, 9, 31, 0.9);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.25rem;
+	padding: 0.75rem 1rem;
+	background-color: rgba(3, 9, 31, 0.9);
+}
+
+main {
+	min-height: calc(100vh - 16rem);
+}
+
+.logo {
+	display: table-cell;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #f0f0f0;
+	color: rgba(3, 9, 31, 0.9);
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (min-width: 768px) {
+	.logo {
+		height: 60px;
+		width: 60px;
+		font-size: 2rem;
+	}
+}
+
+.nav-header {
+	min-height: 1.25rem;
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (min-width: 768px) {
+	.nav-header {
+		font-size: 1.25rem;
+	}
+}
+
+.main-menu, .social-menu {
+	display: flex;
+	color: #f0f0f0;
+}
+
+.main-menu a, a:link, a:hover {
+	color: #f0f0f0;
+}
+
+.main-menu > li {
+	position: relative;
+	margin-left: .8rem;
+}
+
+.main-menu > li:after {
+	position: absolute;
+	content: "";
+	height: .15rem;
+	width: 100%;
+	bottom: -0.125rem;
+	transition: all 0.3s ease-out;
+	background: #f0f0f0;
+	left: 50%;
+	transform: translateX(-50%) scaleX(0);
+}
+
+.main-menu > li:hover:after {
+	transform: translateX(-50%) scaleX(1);
+}
+.social-menu a, a:link, a:hover {
+	color: #f0f0f0;
+}
+
+.social-menu > li {
+	margin-left: .8rem;
+}
+
+.article-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+	.article-list {
+		padding: 0 4.3rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.article-list {
+		padding: 0 2.5rem;
+	}
+}
+
+.article-item {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.article-item {
+		margin-top: 1.25rem;
+		width: 17.66rem;
+	}
+}
+
+.article-content {
+	display: flex;
+	flex-direction: column;
+	margin: 0.94rem 0;
+}
+
+.article-img > a > img {
+	width: 100%;
+	height: auto;
+	border-radius: .32rem;
+	object-fit: cover;
+}
+
+.article-list-description {
+	font-weight: 300;
+}
+
+.article-list-meta {
+	display: flex;
+	flex-direction: column;
+}
+
+.article-list-date,
+.article-list-author,
+.article-list-category,
+.article-list-tags {
+	display: flex;
+	font-weight: 300;
+}
+
+.blog-post {
+	margin: 0 auto;
+	max-width: 50rem;
+	padding: 1.25rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.02rem;
+}
+
+.blog-post h1 {
+	font-size: 2rem;
+}
+
+.blog-post h1, h2 {
+	font-weight: 400;
+}
+
+.blog-post h2 {
+	font-size: 1.3rem;
+}
+
+.blog-post img {
+	width: 100%;
+	height: auto;
+}
+
+.blog-post-highlight {
+	background-color: #bcbcbc;
+	padding: 0 0.3rem;
+}
+
+.blog-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.blog-meta {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px)  {
+	.blog-header {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.blog-meta {
+		font-size: 1rem;
+	}
+}
+
+.about-me h3 {
+	font-size: 1.1rem;
+}
+
+.about-me-list {
+	font-size: 1rem;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: rgba(3, 9, 31, 0.9);
+	color: white;
+	text-align: center;
+	padding: 1.25rem 0;
+	margin-top: 6rem;
+	font-size: .9rem;
+}
+
+footer > span {
+	color: #f0f0f0;
+	margin: 0 1.25rem;
+}
+
+footer span > a, a:link {
+	color: #f0f0f0;
+}
