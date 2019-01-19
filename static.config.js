@@ -2,8 +2,8 @@ import postList from './src/posts';
 const posts = postList.sort((a,b) => a.id - b.id);
 
 export default {
+  siteRoot:'https://orlandobrown.uk',
   getSiteData: async () => ({
-    siteRoot:'https://okbrown.github.io',
     siteTitle: 'Orlando Brown - The pixel pusher blog',
     header: {
       logoName: 'OB',
@@ -28,7 +28,6 @@ export default {
         ]
       }
     },
-    basepath:'blog'
   }),
   getRoutes: async () => {
     const getData = () => ({ posts });

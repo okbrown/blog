@@ -1,7 +1,7 @@
 {
   "name": "okb-pixel-pusher-blog",
   "version": "0.0.1",
-  "homepage": "https://okbrown.github.io/blog",
+  "homepage": "https://orlandobrown.uk",
   "private": true,
   "scripts": {
     "start": "npm run build:posts && react-static start",
@@ -9,7 +9,7 @@
     "build": "npm run build:posts && react-static build",
     "build:posts": "rm ./src/posts/index.js && node static.build.posts.js",
     "serve": "serve dist -p 3000 -s",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME dist",
     "deploy": "gh-pages -d dist"
   },
   "reactStaticCustom": {
