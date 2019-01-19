@@ -1,7 +1,7 @@
 {
   "name": "okb-pixel-pusher-blog",
   "version": "0.0.1",
-  "homepage": "https://orlandobrown.uk",
+  "homepage": "https://okbrown.github.io/blog",
   "private": true,
   "scripts": {
     "start": "npm run build:posts && react-static start",
